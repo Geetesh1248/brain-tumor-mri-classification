@@ -1,0 +1,85 @@
+{
+  "model": "LightGBM",
+  "test_accuracy": 0.919192,
+  "best_iteration": 299,
+  "training_time_seconds": 78.68,
+  "confusion_matrix": [
+    [
+      217,
+      0,
+      23,
+      3
+    ],
+    [
+      0,
+      250,
+      3,
+      3
+    ],
+    [
+      13,
+      10,
+      191,
+      16
+    ],
+    [
+      0,
+      1,
+      8,
+      252
+    ]
+  ],
+  "per_class": {
+    "glioma": {
+      "precision": 0.9435,
+      "recall": 0.893,
+      "f1_score": 0.9175,
+      "support": 243
+    },
+    "healthy": {
+      "precision": 0.9579,
+      "recall": 0.9766,
+      "f1_score": 0.9671,
+      "support": 256
+    },
+    "meningioma": {
+      "precision": 0.8489,
+      "recall": 0.8304,
+      "f1_score": 0.8396,
+      "support": 230
+    },
+    "pituitary": {
+      "precision": 0.9197,
+      "recall": 0.9655,
+      "f1_score": 0.9421,
+      "support": 261
+    }
+  },
+  "macro_avg": {
+    "precision": 0.9175,
+    "recall": 0.9164,
+    "f1-score": 0.9166
+  },
+  "weighted_avg": {
+    "precision": 0.919,
+    "recall": 0.9192,
+    "f1-score": 0.9187
+  },
+  "comparison": {
+    "XGBoost": {
+      "test_accuracy": 0.9091,
+      "macro_f1": 0.91,
+      "train_time_s": 135
+    },
+    "CatBoost": {
+      "test_accuracy": 0.8879,
+      "macro_f1": 0.884,
+      "train_time_s": 189
+    },
+    "LightGBM": {
+      "test_accuracy": 0.9192,
+      "macro_f1": 0.9166,
+      "train_time_s": 78.7
+    }
+  }
+}
